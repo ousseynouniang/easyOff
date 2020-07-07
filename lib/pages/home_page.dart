@@ -15,32 +15,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-          child: SafeArea(
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Icon(
-                      Icons.menu,
-                      size: 40.0,
-                    ),
-                    Text(
-                      'EasyFix App',
-                      style: TextStyle(fontSize: 20.0),
-                    ),
-                    Icon(
-                      Icons.supervised_user_circle,
-                      size: 40.0,
-                    )
-                  ],
-                ),
-              ),
-            ),
-          ),
-          preferredSize: Size.fromHeight(100)),
+      backgroundColor: Colors.white,
+      appBar: PreferredSize(),
       body: Container(
         color: Colors.white,
         height: MediaQuery.of(context).size.height,
